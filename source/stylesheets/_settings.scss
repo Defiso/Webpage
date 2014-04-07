@@ -30,14 +30,14 @@
 
 // $include-html-grid-classes: $include-html-classes;
 
-// $row-width: rem-calc(1000);
+$row-width: 1400px;
 // $column-gutter: rem-calc(30);
-// $total-columns: 12;
+$total-columns: 24;
 
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-color: #222;
+$body-font-family: "gotham", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -58,8 +58,8 @@
 // $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-radius: 5px;
+$global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -930,11 +930,11 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+// $topbar-bg-color: rgba(0, 0, 0, 0.75);
+$topbar-bg: rgba(0, 0, 0, 0.75);
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 65px;
 // $topbar-margin-bottom: 0;
 
 // Control Input height for top bar
@@ -956,12 +956,12 @@
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: 13px;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg-hover: #272727  ;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: darken($primary-color, 5%);
-// $topbar-link-font-family: $body-font-family;
+$topbar-link-font-family: $body-font-family;
 
 // $topbar-button-font-size: 0.75rem;
 
@@ -993,3 +993,61 @@
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+
+
+// BUTTONS
+
+// $include-html-button-classes: $include-html-classes;
+
+// We use these to build padding for buttons.
+$button-med: 0.8rem;
+// $button-tny: rem-calc(7);
+// $button-sml: rem-calc(9);
+// $button-lrg: rem-calc(16);
+
+// We use this to control the display property.
+// $button-display: inline-block;
+// $button-margin-bottom: rem-calc(20);
+
+// We use these to control button text styles.
+$button-font-family: gotham;
+$button-font-color: #FFFFFF;
+// $button-font-color-alt: #333;
+// $button-font-med: rem-calc(16);
+// $button-font-tny: rem-calc(11);
+// $button-font-sml: rem-calc(13);
+// $button-font-lrg: rem-calc(20);
+// $button-font-weight: bold;
+// $button-font-align: center;
+
+// We use these to control various hover effects.
+// $button-function-factor: 10%;
+
+// We use these to control button border styles.
+$button-border-width: 2px;
+$button-border-style: solid;
+
+// We use this to set the default radius used throughout the core.
+$button-radius: $global-radius;
+$button-round: $global-rounded;
+
+// We use this to set default opacity for disabled buttons.
+// $button-disabled-opacity: 0.6;
+
+// We use these to style paragraphs
+// $paragraph-font-family: inherit;
+// $paragraph-font-weight: normal;
+// $paragraph-font-size: 1rem;
+$paragraph-line-height: 1.5;
+// $paragraph-margin-bottom: rem-calc(20);
+// $paragraph-aside-font-size: rem-calc(14);
+// $paragraph-aside-line-height: 1.35;
+// $paragraph-aside-font-style: italic;
+// $paragraph-text-rendering: optimizeLegibility;
+
+// These control how subheaders are styled
+// $subheader-line-height: 1.4;
+// $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+// $subheader-font-weight: 300;
+// $subheader-top-margin: .2rem;
+// $subheader-bottom-margin: .5rem;

@@ -1,0 +1,16 @@
+@import "settings";
+@import "foundation.scss";
+@import "libs/variables";
+
+@import "shared/nav";
+@import "shared/offcanvas";
+@import "shared/footer";
+
+@import "views/intro";
+@import "views/subpage";
+@import "views/resultguaranteed";
+
+@import "libs/fonts";
+@import "libs/typography";
+@import "libs/btn";
+@import "libs/arrows";

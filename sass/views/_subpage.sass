@@ -45,7 +45,8 @@ body.page
     background-image: url("/images/front-bg/background3.jpg")
     img.head
       right: 30px
-      height: 100%
+      top: 5%
+      height: 90%
       display: none
       @media #{$medium-up}
         display: block
@@ -67,7 +68,8 @@ body.page
     background-image: url("/images/front-bg/background5.jpg")
     img.head
       right: 30px
-      height: 100%
+      top: 5%
+      height: 90%
       display: none
       @media #{$medium-up}
         display: block
@@ -86,3 +88,36 @@ body.page
         width: 20%
       @media #{$large-up}
         width: 30%
+  .portrait
+    +clearfix
+    +grid-column($columns: 24, $collapse: false, $float: right, $center: true)
+    @media #{$large-up}
+      +grid-column($columns: 6, $collapse: false, $float: right)
+    margin-bottom: $paragraph-margin-bottom
+    img
+      display: block
+      float: left
+      margin-bottom: 5px
+    div
+      display: block
+      float: left
+      width: 100%
+      line-height: $paragraph-line-height
+    a
+      color: #797777
+      text-decoration: underline
+  .case
+    +clearfix
+    +grid-column($columns: 24, $collapse: false, $float: left, $center: true)
+    text-align: center
+    @media #{$large-up}
+      +grid-column($columns: 4, $collapse: false, $float: left)
+    margin-bottom: $paragraph-margin-bottom
+
+
+
+
+
+
+
+

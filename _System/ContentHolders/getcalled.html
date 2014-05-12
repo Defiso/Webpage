@@ -1,0 +1,62 @@
+<div class="getcalled"><a href="#" data-reveal-id="getcalledModal">Bli uppringd</a>
+</div>
+
+<div id="getcalledModal" class="reveal-modal" data-reveal>
+    <h2>Bli uppringd</h2>
+
+    <form name="catwebformform40346" method="post" onsubmit="return checkWholeForm40346(this)" enctype="multipart/form-data" action="http://defiso.businesscatalyst.com/FormProcessv2.aspx?WebFormID=10090&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+
+        <div class="row">
+            <label for="FullName">Namn <span class="req">*</span>
+                <input type="text" name="FullName" id="FullName" class="cat_textbox" maxlength="255" placeholder="Ditt namn" />
+            </label>
+        </div>
+
+        <div class="row">
+            <label for="EmailAddress">E-postadress <span class="req">*</span>
+                <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" placeholder="Din epostadress" />
+            </label>
+        </div>
+
+        <div class="row">
+            <label for="WorkPhone">Telefon (Arbete) <span class="req">*</span>
+                <input type="text" name="WorkPhone" id="WorkPhone" class="cat_textbox" maxlength="255" placeholder="Ditt telefonnummer" />
+            </label>
+        </div>
+
+        <div class="row">
+            <input class="button" type="submit" value="Skicka" id="catwebformbutton" />
+        </div>
+
+
+        <script type="text/javascript" src="http://defiso.businesscatalyst.com/CatalystScripts/ValidationFunctions.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            var submitcount40346 = 0;
+
+            function checkWholeForm40346(theForm) {
+                var why = "";
+                if (theForm.FullName) why += isEmpty(theForm.FullName.value, "Namn");
+                if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+                if (theForm.WorkPhone) why += isEmpty(theForm.WorkPhone.value, "Telefon (Arbete)");
+                if (why != "") {
+                    alert(why);
+                    return false;
+                }
+                if (submitcount40346 == 0) {
+                    submitcount40346++;
+                    theForm.submit();
+                    return false;
+                } else {
+                    alert("Formulärinsändning pågår.");
+                    return false;
+                }
+            }
+             //]]>
+        </script>
+    </form>
+
+
+
+    <a class="close-reveal-modal">&#215;</a>
+</div>

@@ -20,3 +20,5 @@
 .DS_Store
 
 *bower_components
+
+stylesheets/application.css

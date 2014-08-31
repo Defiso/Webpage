@@ -1,51 +1,25 @@
-# Middleman Template: ZURB Foundation #
+# Defiso webpage
+This webpage is built on top of the Adobe Business Catalyst platform. The easiest way to 
+create a working copy is by using the partner portal tools. Please contact [Novium](http
+://noviumdesign.se) for a isolated copy.
 
-middleman-zurb-foundation is a minimal [Middleman](http://middlemanapp.com/) project template with the [SASS](http://sass-lang.com/) version of the [ZURB Foundation](http://foundation.zurb.com/) Framework.
+Most of the code can whoever be accessed by the web UI. Installing tracking-codes etc.
 
-## Installation ##
+## Dependencies
+1. Ruby
+2. Compass
+3. Sass
+4. Bower
+5. Foundation globally installed
 
-Make sure to have:
+## How to make changes?
+The basic rule is that all .js and .css is compiled locally and uploaded to server by sFTP. 
+Please DO NOT edit CSS or JS on server. It will be overwritten in build. All code for forms 
+is pasted in the app.js file.
 
-1. ruby
-1. git
-1. middleman ($ `gem install middleman`)
-1. bower ($ `npm install -g bower`)
+Please make sure that this code is added before ```</body>``` to all pages where forms are 
+used.
 
+```<script src="//defiso.worldsecuresystems.com/CatalystScripts/ValidationFunctions.js"></script>```
 
-Clone into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`.
-
-1. $ `git clone git://github.com/axyz/middleman-zurb-foundation.git ~/.middleman/zurb-foundation`
-
-Then create a new project using zurb-foundation template.
-
-1. $ `middleman init my_new_project --template=zurb-foundation`
-1. $ `cd my_new_project`
-1. $ `bower install`
-1. $ `bundle exec middleman`
-
-Now you can start hacking on `source` directory and watch live changes on [localhost:4567](http://localhost:4567).
-
-For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/) or feel free to hit me up on [Twitter](http://twitter.com/axyz).
-
-## ZURB Foundation License ##
-
-Copyright (c) 2011 ZURB, http://www.zurb.com/
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Use $```compass watch``` to watch for changes and build css.
